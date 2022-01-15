@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+img {
+   display: block;
+   width: 86%;
+   max width: 100%;
+   height: auto;
+   padding: 2px;
+}
+</style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
+<!--
+Title: Contact Us Page
+Author: Alex Robinson
+-->
+               <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+               <title>Contact Us</title>
+	       <link rel="shortcut icon" type="image/png" href="images/favicon1.png">
+</head>
+<body>
+<header>    
+    <nav>
+        <label id="hamburger">&#9776;</label>
+    <ul>
+        <li><a href="Product Suggestion.html">Product Suggestion</a></li>
+        <li><a href="Contact Us.html">Contact us</a></li>
+    </ul>
+    </nav>
+</header>
+    
+<h1>Contact Us</h1>
+    <ul class="flex">
+    <li id="flex1">
+    <p id="map">Visit our store located at 5875 W Van Horn Tavern Rd. Columbia MO 65203, just south of I70 at the 121 mile marker.</p> 
+    <button type="button" onclick="myFunction()">Need a map?</button></li>
+    <script>
+    function myFunction(){
+    document.getElementById("map").innerHTML = "<img src='store1.jpg'/>"
+}
+    </script>
+    <li id="flex2">
+        <div>
+<form action="mailto:alexrobinson1992@gmail.com?Subject=Feedback" method="post" enctype="text/plain">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="First Name.." required><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Last Name.." required><br>
+  <label for="lname">Email:</label><br>
+  <input type="text" id="email" name="email" placeholder="Email Address.." required><br>
+  <label for="creason">Contact reason:</label><br>
+  <input type="checkbox" name="reason" value="Order question">Order question<br> 
+  <input type="checkbox" name="reason" value="Website feedback">Website feedback<br> 
+  Trouble finding products? Try using the <a href="Product Suggestion.html">Product Suggestion Page</a><br> 
+  <br>
+  <label for="fname">Message:</label><br>
+  <textarea id="message" name="message" placeholder="Feedback.." required></textarea><br><br>
+  <input type="submit" value="Submit">
+</form> 
+</div>
+</li>
+    </ul>
+        
+<footer>
+    <div class ="box">
+    <p>
+Shoot us an email at <a href="mailto:alexrobinson1992@gmail.com">alexrobinson1992@gmail.com</a>
+<br> <br>
+Or you can call us directly using the number ###-###-####
+    </p>
+    <p>We greatly value your feedback on our products and services. Please take a moment to fill out this Customer Feedback Form and let us know how we can help serve you better on your next visit.</p>
+  
+    </div>
+<script>
+window.alert("Our hours of operation are between 8am and 5pm central time, Monday through Friday. If you are trying to contact us outside of those times, we will get back to you as soon as possible."); 
+</script>
+</footer>
+</body>
+</html>

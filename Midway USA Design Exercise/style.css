@@ -1,0 +1,162 @@
+/*<!--
+Title: Robinson CSS page
+-->*/
+
+body {
+background-color: #C0C0C0;
+margin: 15px;
+}
+
+h1 {
+color: #004080; 
+font-size: 16pt;
+font-family: sans-serif;
+border-style: solid;
+border-width: thick;
+border-color: black;
+background-color: #D7D7D7;
+
+}
+
+p {
+ font-size: 12pt;
+}
+
+footer {
+ font-size: 12pt;
+ font-color: CDCDCD;
+ border-top-style: solid;
+ border-top-width: 2px;
+ border-top-color: black;
+ padding: 5px;
+}
+
+.box{
+    background-image: url(images/background.jpg);
+}
+
+a:hover{
+ color: red;
+}
+
+a:link {
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    font-size: 12pt
+}
+ a:active {
+    color: green;  
+}
+    
+ul.flex {
+    list-style-type: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 513px;
+}
+    
+.flex{
+    display: flex;
+    border: 1px solid red;
+}
+
+#flex1{
+    width: 24%;
+    padding: 2px;
+    align-self: center;
+    color: black;
+    font-size: 15.5pt;
+}
+
+#flex2{
+    width: 70%;
+    height: 100px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #1664fa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+ background-color: #cc0000;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #C0C0C0;
+  padding: 20px;
+}
+
+th, td{
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: #708090;
+}
+
+#top{
+    background-color: #959595;
+}
+
+
+@media screen and (max-width:640px){
+    body{
+        background-color: white;
+    }
+    
+    main{
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width:565px){
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media print{
+    body{ 
+    font-family: Georgia, serif;
+    color: #000;
+    }
+    
+    nav{
+        display: none;
+    }
+    
+    h1{
+    border: none;
+    }
+    
+    .current{
+    color: black;
+    }
+    
+    .old{
+    color: black;
+    }
+}
